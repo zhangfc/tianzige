@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <link href="{{ url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
+        <link href="{{url_for('static', filename='tianzige.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <br /><br />
+        <div>
+            <form action="{{ url_for('index') }}" method="post">
+
+                <div class='row'>
+                    <div class='col-md-5 col-md-offset-3'><textarea name="text" class='form-control' rows='5'></textarea></div>
+                </div>
+                <br />
+                <div class='row'>
+                    <div class='col-md-offset-3'>
+                        <label class='radio-inline'>
+                            <input type="radio" class="text" value="1" name="lab" checked>楷书
+                        </label>
+                        <label class='radio-inline'>
+                            <input type="radio" class="text" value="2" name="lab">行书
+                        </label>
+                </div>
+
+                    </div>
+<br />
+                <div class='row'>
+                    <div class='col-md-1 col-md-offset-3'>
+                        <input type="submit"  class="btn btn-primary" value="转换" name="sure">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div class='row'>
+            <ul>
+                {% for x in text %}
+                <div class='col-md-1'>
+                    <div class='{{ font }}'> 
+                        <li><p>{{ x }}</p></li>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </ul>
+        </div>
+    </body>
+</html>

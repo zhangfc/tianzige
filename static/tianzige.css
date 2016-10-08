@@ -1,0 +1,44 @@
+@font-face{
+    font-family:hangshu-tianyingzhang;
+    src: url('hangshu.eot');
+    src: url('hangshu.ttf') format('TrueType'),
+         url('hangshu.woff') format('woff'),
+         url('hangshu.svg') format('svg');
+}
+@font-face{
+    font-family:kaishu-tianyingzhang;
+    src: url('kaishu.eot');
+    src: url('kaishu.ttf') format('TrueType'),
+         url('kaishu.woff') format('woff'),
+         url('kaishu.svg') format('svg');
+}
+
+.hangshu li{
+    display:block;
+    width:80px;
+    height:80px;
+    background-image:url(gezi.jpg);
+    line-height:80px;
+    
+    font-family:hangshu-tianyingzhang;
+    font-size:58px;
+    text-align: center;
+
+}
+
+
+.kaishu li{
+    display:block;
+    width:80px;
+    height:80px;
+    background-image:url(gezi.jpg);
+    line-height:80px;
+    
+    font-family:kaishu-tianyingzhang;
+    font-size:58px;
+    text-align: center;
+
+}
+
+
+

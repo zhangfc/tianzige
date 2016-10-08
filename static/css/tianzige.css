@@ -1,0 +1,26 @@
+@font-face{
+    font-family:hangshu-tianyingzhang;
+    src: url('hangshu.eot');
+    src: url('hangshu.ttf') format('TrueType'),
+         url('hangshu.woff') format('woff'),
+         url('hangshu.svg') format('svg');
+
+
+}
+
+
+.tianzige li{
+    display:block;
+    width:80px;
+    height:80px;
+    background-image:url(gezi.jpg);
+    line-height:80px;
+    
+    font-family:hangshu-tianyingzhang;
+    font-size:58px;
+    text-align: center;
+
+}
+.tianzige p{
+
+}
